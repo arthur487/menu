@@ -42,4 +42,19 @@ nav li a {
     background-color: #fff;
     display: block;
     margin-bottom: 4px;
+    padding: 1px;
+}
+form {
+    display: none;
+}
+.menu-burger span:hover {
+    cursor: pointer;
+}
+button {
+    opacity: 0;
+    padding: 10px;
+    position: relative;
+    left: -25%;
+    padding-bottom: 6px;
+    padding-top: 10px;
 }
