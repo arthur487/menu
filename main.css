@@ -35,6 +35,11 @@ nav li a {
 .menu-burger {
     width: 32px;
 }
+header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .menu-burger span {
     height: 2px;
@@ -47,14 +52,16 @@ nav li a {
 form {
     display: none;
 }
-.menu-burger span:hover {
-    cursor: pointer;
-}
+
 button {
     opacity: 0;
-    padding: 10px;
+    padding: 18px;
     position: relative;
-    left: -25%;
-    padding-bottom: 6px;
-    padding-top: 10px;
+    left: -19%;
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+
+button:hover {
+    cursor: pointer;
 }
