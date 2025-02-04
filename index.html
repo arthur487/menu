@@ -14,7 +14,7 @@
                 EBAC Motors
             </h1>
             <div class="menu-burger">
-                <span id="sp"><button id="button" type="submit"></button></span>
+                <span id="sp"></span>
                 <span id="sp"></span>
                 <span id="sp"></span>
             </div>
@@ -54,6 +54,9 @@
     $(document).ready(function(){
         $('#carousel-imagens').slick({
             autoplay:true
+        })
+        $('.menu-burger').click(function() {
+            $('nav').slideToggle();
         })
         
     })

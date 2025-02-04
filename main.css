@@ -17,6 +17,10 @@ header {
 nav {
     background-color: #575fcf;
     padding: 16px 0;
+    display: none;
+}
+html {
+    overflow-x: hidden;
 }
 
 nav li {
