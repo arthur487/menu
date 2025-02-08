@@ -9,7 +9,7 @@
     width:100% ;
     margin: 0 auto;
 }
-header {
+header, footer {
     background-color: rgb(5, 5, 41);
     padding: 16px 0;
     color: #fff;
@@ -38,11 +38,18 @@ nav li a {
 }
 .menu-burger {
     width: 32px;
+    cursor: pointer;
 }
 header > .container {
-    display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 16px 0;
+}
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .menu-burger span {
@@ -53,19 +60,96 @@ header > .container {
     margin-bottom: 4px;
     padding: 1px;
 }
-form {
-    display: none;
+.container-flex {
+    display: flex;
+}
+#sobre-img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+section {
+    padding: 48px 0;
+}
+section h2 {
+    margin-bottom: 16px;
+}
+.List-Vehicles li {
+    list-style: none;
+    max-width: 30%;
+}
+.List-Vehicles li img {
+    max-width: 100%;
+    margin: 16px 0;
 }
 
+.List-Vehicles li h3 {
+    margin: 16px 0;
+}
+.List-Vehicles {
+    flex-wrap: wrap;
+}
+.Item-Central {
+    margin: 0 5%;
+}
 button {
-    opacity: 0;
-    padding: 18px;
-    position: relative;
-    left: -19%;
-    padding-bottom: 5px;
-    padding-top: 15px;
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: rgb(37, 204, 37);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 3px;
+}
+button:hover {
+    background-color: rgb(29, 110, 29);
+    border-radius: 6px;
 }
 
-button:hover {
-    cursor: pointer;
+.price{
+    margin: 16px 0;
+    display: block;
+}
+.price del {
+    color: #ccc;
+    font-size: 14px;
+}
+.form-campo {
+    margin-bottom: 16px 0;
+    padding-bottom: 16px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+.form-campo input,
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 8px 0;
+}
+.form-campo textarea {
+    resize: none;
+    height: 120px;
+}
+form {
+    max-width: 360px;
+}
+form button {
+    max-width: 120px;
+}
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+footer li img {
+    height: 32px;
+}
+footer .container {
+    justify-content: space-between;
+    align-items: center;
 }
